@@ -27,6 +27,9 @@ $layout-max-width-wide:         $measure * 64;
 $layout-max-width-unit:       rem($layout-max-width);
 $layout-max-width-wide-unit:  rem($layout-max-width-wide);
 
-// Masthead widths
-$masthead-full:       $measure-unit * 10;
-$masthead-icon:       $measure-unit * 4;
+// Masthead sizes
+$masthead-fixed: $measure-unit * 8;
+
+// Z-indeces
+$z-masthead: 2;
+$z-wrapper: 1;

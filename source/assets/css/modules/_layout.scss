@@ -12,16 +12,13 @@
 }
 
 .wrapper {
-  overflow: hidden;
-  width:100%;
-  flex:1;
-}
-main {
   background:$color-white;
+  flex:1;
   overflow: hidden;
+  padding: $masthead-fixed 0 $measure-unit * 3;
   position: relative;
-  z-index:1;
-  padding-bottom: $measure-unit * 3;
+  width: 100%;
+  z-index: $z-wrapper;
 }
 
 hr {
