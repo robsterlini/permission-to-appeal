@@ -15,10 +15,13 @@
   background:$color-white;
   flex:1;
   overflow: hidden;
-  padding: $masthead-fixed 0 $measure-unit * 3;
+  padding: $masthead-hamburger 0 $measure-unit * 3;
   position: relative;
   width: 100%;
   z-index: $z-wrapper;
+  @include min-width($tp-masthead-hamburger) {
+    padding-top: $masthead-fixed;
+  }
 }
 
 hr {

@@ -11,10 +11,20 @@
 .masthead {
 	background: $color-black;
 	left: 0;
+	padding: $measure-unit 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: $z-masthead;
+	.group {
+		position: relative;
+	}
+	@include min-width($tp-masthead-hamburger) {
+		.group {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
 }
 
 /* ==|== Masthead =================
@@ -22,6 +32,7 @@
 ========================================== */
 
 .masthead__logo {
-	margin: $measure-unit * 2 auto $measure-unit;
+	line-height: $measure-unit * 2;
+	margin: auto 0;
 	max-width: $layout-max-width-unit;
 }

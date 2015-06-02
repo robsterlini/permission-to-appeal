@@ -28,6 +28,7 @@ $layout-max-width-unit:       rem($layout-max-width);
 $layout-max-width-wide-unit:  rem($layout-max-width-wide);
 
 // Masthead sizes
+$masthead-hamburger: $measure-unit * 4;
 $masthead-fixed: $measure-unit * 8;
 
 // Z-indeces

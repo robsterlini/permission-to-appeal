@@ -41,9 +41,17 @@
 /* ==|== Navigation =================
   Menu button
 ========================================== */
-
+$nav-btn-height: rem(42);
+$nav-height: rem(32);
 .nav__toggle {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: ($nav-height / 2) - ($nav-btn-height / 2);
 	@include min-width($tp-masthead-hamburger) {
 		display: none;
 	}
+}
+.nav__toggle__btn {
+  margin: 0;
 }
