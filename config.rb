@@ -63,14 +63,14 @@ set :images_dir, 'assets/images'
 set :content_dir, '../../content' # This is the content directory relative to the images_dir
 
 # Set base URLs
-set :url_root, 'https://robsterlini.co.uk'
-set :url_base, 'robsterlini.co.uk'
+set :url_root, 'https://permissiontoappeal.co.uk'
+set :url_base, 'permissiontoappeal.co.uk'
 
 # Set some defaults
-set :default_description, 'Built with Middleplate'
-set :default_title, 'Built with Middleplate'
-set :default_title_suffix, '• Change me'
-set :default_site_title, 'Middleplate'
+set :default_description, 'Permission to appeal'
+set :default_title, 'Permission to appeal'
+set :default_title_suffix, '• Permission to Appeal'
+set :default_site_title, 'Permission to Appeal'
 set :default_posts, '5'
 
 # Set some sharing credentials
@@ -98,20 +98,8 @@ end
 # Turn on sitemap
 activate :search_engine_sitemap
 
-# Set up MM for blogging
-activate :blog do |blog|
-  # set options on blog
-  blog.sources = 'articles/{year}-{month}-{day}-{title}.html'
-  blog.permalink = 'blog/{title}/index.html'
-  blog.tag_template = "tag.html"
-  blog.taglink = "blog/category/{tag}/index.html"
-  blog.layout = "layout"
-  blog.layout = "blog_layout"
-end
-
 # disable layout
 page ".htaccess.apache", :layout => false
-page "redirects/.htaccess.apache", :layout => false
 page "feed.xml", :layout => false
 
 # rename file after build
