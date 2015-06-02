@@ -1,12 +1,12 @@
 <header class="masthead">
   <div class="group">
-    <div class="masthead__logo"><%= default_site_title %></div>
+    <a class="masthead__logo link--reversed" href="index.html" title="Back to the homepage"><%= default_site_title %></a>
     <nav class="nav">
       <ul class="nav__list"><!--
         <% data.pages.pages.each do |nav| %>
           <% if nav.nav.masthead != false %>
             --><li class="nav__item">
-              <a title="<%= nav.nav.alt %>" class="nav__link--<%= nav.slug != "" ? nav.slug : "home" %>" href="/<%= nav.slug %>"><%= nav.nav.label %></a>
+              <a title="<%= nav.nav.alt %>" class="nav__link--<%= nav.slug != "" ? nav.slug : "home" %> link--reversed" href="/<%= nav.slug %>"><%= nav.nav.label %></a>
             </li><!--
           <% end %>
         <% end %>

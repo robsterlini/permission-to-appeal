@@ -9,15 +9,57 @@
 	Primary
 ========================================== */
 
-a {
-	color:$color-link-primary;
-	transition:color $timing cubic-bezier(#{$bezier-nice});
+@mixin gradient-underline(
+	$c: $color-link-primary,
+	$p: 98%,
+	$b: $color-background,
+	$l: $color-link-primary,
+	$h: $color-link-primary-hover,
+	$a: $color-link-primary-active
+) {
+	$text-shadow-offset: rem(0.5);
+	$text-shadow-index: 4;
+	$text-shadow: '';
+	@for $i from 1 through $text-shadow-index {
+		$shadow: #{$b} #{$text-shadow-offset * $i} 0;
+		$shadow2: #{$b} #{$text-shadow-offset * $i * -1} 0;
+		@if $text-shadow == '' {
+			$text-shadow: $shadow;
+		}
+		@else {
+			$text-shadow: append($text-shadow, $shadow, 'comma');
+		}
+		$text-shadow: append($text-shadow, $shadow2, 'comma');
+		@if ($i <= 2) {
+			$shadow4: #{$b} #{$text-shadow-offset * $i * -1} #{$text-shadow-offset * $i * -1};
+			$text-shadow: append($text-shadow, $shadow4, 'comma');
+		}
+	}
+	background: linear-gradient($c 50%, rgba($c, 0) 50%) repeat-x 0 $p;
+	background-size: rem(1) rem(2);
+	color: $l;
 	text-decoration: none;
+	text-shadow: $text-shadow;
 	&:hover,
 	&:focus {
-		color:$color-link-primary-hover;
+		background-image: linear-gradient($h 50%, rgba($h, 0) 50%);
+		color: $h;
 	}
 	&:active {
-		color:$color-link-primary-active;
+		background-image: linear-gradient($a 50%, rgba($a, 0) 50%);
+		color: $a;
 	}
+}
+
+a {
+	@include gradient-underline();
+	transition: color $timing cubic-bezier(#{$bezier-nice});
+}
+
+%link-reversed {
+	@include gradient-underline($color-link-reversed, 98%, $color-masthead, $color-link-reversed, $color-link-reversed-hover, $color-link-reversed-active);
+}
+
+.link--reversed {
+	@extend %link-reversed;
 }

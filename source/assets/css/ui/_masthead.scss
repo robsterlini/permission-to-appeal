@@ -9,7 +9,7 @@
 ========================================== */
 
 .masthead {
-	background: $color-black;
+	background: $color-masthead;
 	left: 0;
 	padding: $measure-unit 0;
 	position: fixed;
@@ -32,6 +32,7 @@
 ========================================== */
 
 .masthead__logo {
+	background-position: 0 84%;
 	line-height: $measure-unit * 2;
 	margin: auto 0;
 	max-width: $layout-max-width-unit;
