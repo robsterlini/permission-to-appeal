@@ -34,3 +34,24 @@ hr {
     margin-top: rem(60);
   }
 }
+
+@include min-width($tp-two-columns) {
+  [class^="col--"] {
+    display: inline-block;
+    vertical-align: top;
+    :first-child {
+      margin-top: 0;
+    }
+    h1:first-child {
+      position: relative;
+      top: rem(-34);
+    }
+  }
+  .col--left {
+    width: $col-slim-unit - $measure-unit;
+    margin-right: $measure-unit * 2;
+  }
+  .col--right {
+    width: calc(100% - #{$col-slim-unit} - #{$measure-unit});
+  }
+}
