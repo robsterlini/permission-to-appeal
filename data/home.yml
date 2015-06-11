@@ -1,4 +1,6 @@
 sections:
 
     -   partial: "hero"
+        title: "Permission to appeal"
+        content: "pages/section-intro"
     -   partial: "intro"
