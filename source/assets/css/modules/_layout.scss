@@ -20,7 +20,9 @@
   width: 100%;
   z-index: $z-wrapper;
   @include min-width($tp-masthead-hamburger) {
-    padding-top: $masthead-fixed;
+    .page--no-hero {
+      padding-top: $masthead-fixed;
+    }
   }
 }
 

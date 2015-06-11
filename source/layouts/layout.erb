@@ -39,7 +39,7 @@
     <%= stylesheet_link_tag "screen" %>
   </head>
   
-  <body class="<%= page_classes %>" data-js="toggled-navigation-parent">
+  <body class="<%= page_classes %><% if !!current_page.data.no_hero %> page--no-hero<% end %>" data-js="toggled-navigation-parent">
     <% if !current_page.data.no_masthead %>
         <%= partial "partials/masthead" %>
     <% end %>
