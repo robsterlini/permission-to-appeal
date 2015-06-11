@@ -28,6 +28,10 @@ $layout-max-width-wide:         $measure * 64;
 $layout-max-width-unit:       rem($layout-max-width);
 $layout-max-width-wide-unit:  rem($layout-max-width-wide);
 
+// Column widths
+$col-slim: $layout-max-width-wide - $layout-max-width;
+$col-slim-unit: rem($col-slim);
+
 // Masthead sizes
 $masthead-hamburger: $measure-unit * 4;
 $masthead-fixed: $measure-unit * 8;
