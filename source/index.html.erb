@@ -6,6 +6,10 @@ no_masthead: false
 priority: 1.0
 ---
 
+<% data.home.sections.each_with_index do |section, index| %>
+	<%= partial "partials/sections/#{section.partial}" %>
+<% end %>
+
 <div class="group">
 	<h1>Permission to Appeal</h1>
 	<p class="paragraph--pullout">This page will serve as a little introduction to how the boilerplate is built.</p>
