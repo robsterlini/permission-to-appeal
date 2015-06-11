@@ -8,5 +8,5 @@ priority: 1.0
 ---
 
 <% data.home.sections.each_with_index do |section, index| %>
-	<%= partial "partials/sections/#{section.partial}" %>
+	<%= partial "partials/sections/#{section.partial}", :locals => { :s => section, :i => index } %>
 <% end %>
