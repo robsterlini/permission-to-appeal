@@ -8,9 +8,10 @@
 ========================================== */
 
 .section--sounds {
-	background: url(../images/hero/sounds.jpg) center no-repeat;
+	background: $color-white url(../images/hero/sounds.jpg) center no-repeat;
 	background-size: cover;
 	overflow: hidden;
+	padding-bottom: $measure-unit * 2;
 }
 
 /* ==|== Sounds =================

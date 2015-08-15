@@ -1,0 +1,60 @@
+/**
+ *Band SCSS Partial
+ *
+ */
+
+/* ==|== Band =================
+	Section
+========================================== */
+
+.section--band {
+	background: $color-black url(../images/hero/sounds_gfergerg.jpg) center no-repeat;
+	background-size: cover;
+  color: $color-white;
+	overflow: hidden;
+	// padding-bottom: $measure-unit * 2;
+}
+
+/* ==|== Band =================
+	Grid
+========================================== */
+
+$face-small: $measure-unit * 12;
+
+.band__member {
+  background: center no-repeat;
+  background-size: cover;
+  padding: $measure-unit 0 $measure-unit * 2;
+  overflow: hidden;
+  .group {
+    position: relative;
+  }
+  @include min-width($bp-small) {
+    &:nth-of-type(even) {
+      .group {
+        padding-left: $face-small + $measure-unit * 2;
+      }
+      .band__member__face {
+        left: 0;
+      }
+    }
+    &:nth-of-type(odd) {
+      .group {
+        padding-right: $face-small + $measure-unit * 2;
+      }
+      .band__member__face {
+        right: 0;
+      }
+    }
+  }
+}
+
+.band__member__face {
+  max-width: $face-small;
+  width: 100%;
+  @include min-width($bp-small) {
+    position: absolute;
+    top: calc(50% - #{$face-small / 2});
+    width: $face-small;
+  }
+}

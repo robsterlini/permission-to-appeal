@@ -49,3 +49,6 @@ sections:
     title: "Contact"
     content: "pages/section-intro"
     masthead: true
+    data:
+      email: "michael.roberts@ucl.ac.uk"
+      ## CHANGE TO CAPITAL A
