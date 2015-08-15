@@ -1,1 +1,15 @@
-SOUNDS HERE
+<div class="group">
+  <h2><%= s.title %></h2>
+  <% s.data.copy.each do |text| %>
+    <p><%= text %>
+  <% end %>
+  <!--<% s.data.sounds.each_with_index do |sound, index| %>
+    --><div class="sound">
+      <h4><%= sound %></h4>
+      <audio controls>
+        <source src="<%= "#{sounds_dir}/#{sound.to_slug}.mp3" %>" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div><!--
+  <% end %>-->
+</div>

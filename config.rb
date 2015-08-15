@@ -61,6 +61,7 @@ set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/images'
 set :content_dir, '../../content' # This is the content directory relative to the images_dir
+set :sounds_dir, 'assets/sounds'
 
 # Set base URLs
 set :url_root, 'https://permissiontoappeal.co.uk'

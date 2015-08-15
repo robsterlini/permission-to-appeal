@@ -23,6 +23,19 @@ sections:
     title: "Sounds"
     content: "pages/section-intro"
     masthead: true
+    data:
+      copy:
+        - "Listen to the luxurious sounds of Permission to Appeal captured live!"
+      sounds:
+        - "Blue Monk"
+        - "Cute"
+        - "Don’t Get Round Much Anymore"
+        - "Fly Me To The Moon"
+        - "The Girl From Ipanema"
+        - "God Rest Ye Merry Gentlemen"
+        - "I Wish I Knew How It Would Feel To Be Free"
+        - "Take The A Train"
+        - "There Will Never Be Another You"
 
   ## BAND
   - partial: "band"
