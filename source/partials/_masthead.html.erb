@@ -1,6 +1,6 @@
 <header class="masthead">
-  <div class="group">
-    <a class="masthead__logo link--reversed" href="index.html" title="Back to the homepage"><%= default_site_title %></a>
+  <div class="group"> 
+    <%= link_to default_site_title, "index.html", :title => "Back to the homepage", :class => "masthead__logo link--reversed" %>
     <nav class="nav">
       <ul class="nav__list"><!--
         <% data.pages.pages.each do |nav| %>
