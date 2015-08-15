@@ -1,6 +1,6 @@
  <header class="masthead">
   <div class="group"> 
-    <%= link_to default_site_title, "index.html", :title => "Back to the homepage", :class => "masthead__logo link--reversed" %>
+    <%= link_to default_site_title, "index.html", :title => "Back to the homepage", :class => "visuallyhidden" %>
     <nav class="nav">
       <ul class="nav__list"><!--
         <% data.home.sections.each do |nav| %>
@@ -12,8 +12,8 @@
         <% end %>
       --></ul>
     </nav>
-    <div class="btns--sizing">
-      <%= link_to "Book us", "#contact", :class => "btn" %>
+    <div class="btns--sizing nav__btns">
+      <%= link_to "Book us", "#contact", :class => "btn btn--booking" %>
     </div>
   </div>
 </header>

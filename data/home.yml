@@ -5,6 +5,8 @@ sections:
     slug: "about"
     title: "Permission to appeal"
     content: "pages/section-intro"
+    masthead: true
+    masthead_title: "Permission to Appeal"
     no_wrapper: true
 
   ## PHOTOS
