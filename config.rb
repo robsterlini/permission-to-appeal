@@ -100,12 +100,7 @@ activate :search_engine_sitemap
 
 # disable layout
 page ".htaccess.apache", :layout => false
-page "feed.xml", :layout => false
-
-# rename file after build
-after_build do
-  File.rename 'build/.htaccess.apache', 'build/.htaccess'
-end
+ignore "/templates/*"
 
 # Build-specific configuration
 configure :build do
