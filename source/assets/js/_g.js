@@ -7,9 +7,10 @@ var g = g || {};
 // 		on the JS simultaneously.
 g.partials = [
   'browserSniff',
-  'navToggle',
-  'codeHighlight',
-  'share'
+  // 'navToggle',
+  // 'codeHighlight',
+  // 'share',
+  'lightbox'
 ];
 
 // This _init function is the function which kicks everything off when

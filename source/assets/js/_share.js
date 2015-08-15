@@ -1,7 +1,7 @@
 /**
- * Social sharing file
+ * Lightbox partial
  *
- * Creates functionality for opening Twitter popup window to share
+ * Opens the lightbox
  */
 
 g.share = function() {
@@ -16,17 +16,5 @@ g.share = function() {
   self.variables = {
     success: "Thanks!"
   }
-
-  $(document).on('click', self.selectors.twitterButton, function(e) {
-    e.preventDefault();
-    var width  = 575, height = 400,
-    left = ($(window).width()  - width) / 2,
-    top = ($(window).height() - height) / 2,
-    articleTitle = $('h1:first').text();
-    url = this.href;
-    opts='status=1'+',width='+width+',height='+height+',top='+top+',left='+left;
-    window.open(url, 'twitter', opts);
-    $(this).html(self.variables.success).addClass(self.classes.success);
-  });
-
+  
 };

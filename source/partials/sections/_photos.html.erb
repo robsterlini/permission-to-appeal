@@ -1,1 +1,6 @@
-PHOTOS HERE
+<!--<% for p in 1..s.data.total %>
+  <% image = "http://placecage.com/#{p * 50}/200" %>
+  --><a class="photo photo--<%= p %>" href="<%= image %>" style="background-image:url(<%= image %>)" data-js="open-lightbox">
+    <span class="visuallyhidden">Photo number <%= p %></span>
+  </a><!--
+<% end %>-->

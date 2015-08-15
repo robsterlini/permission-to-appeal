@@ -6,3 +6,68 @@
 /* ==|== Photos =================
 	Grid
 ========================================== */
+
+$total-photos: 24;
+
+$photos-per-row-large: 8;
+$photos-per-row-mid: 6;
+$photos-per-row-small: 4;
+$photos-per-row-tiny: 3;
+
+.photos {
+
+}
+
+.photo {
+	background: center no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 100vw / $photos-per-row-tiny;
+	vertical-align: top;
+	width: 100% / $photos-per-row-tiny;
+	@include hover {
+		opacity: 0.75;
+	}
+	@include active {
+		opacity: 0.5;
+	}
+	@include min-width($bp-tiny) {
+		height: 100vw / $photos-per-row-small;
+		width: 100% / $photos-per-row-small;
+	}
+	@include min-width($bp-small) {
+		height: 100vw / $photos-per-row-mid;
+		width: 100% / $photos-per-row-mid;
+	}
+	@include min-width($bp-mid) {
+		height: 100vw / $photos-per-row-large;
+		width: 100% / $photos-per-row-large;
+	}
+}
+
+/* ==|== Photos =================
+	Lightbox
+========================================== */
+
+.lightbox {
+	background: rgba($color-black, 0.5);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: $z-lightbox;
+}
+.lightbox--open {
+	display: block;
+}
+.lightbox__image {
+	background: center no-repeat;
+	background-size: contain;
+	height: 80%;
+	left: 10%;
+	position: absolute;
+	top: 10%;
+	width: 80%;
+}
