@@ -8,5 +8,12 @@ priority: 1.0
 ---
 
 <% data.home.sections.each_with_index do |section, index| %>
-	<%= partial "partials/sections/#{section.partial}", :locals => { :s => section, :i => index } %>
+  <% slug = section.slug || section.partial %>
+  <% if !section.no_wrapper %>
+    <section class="section--<%= slug %>" id="<%= slug %>"> <%# Create wrapping section for those that need one %>
+  <% end %>
+  	<%= partial "partials/sections/#{section.partial}", :locals => { :s => section, :i => index } %>
+  <% if !section.no_wrapper %>
+    </section> <%# <!-- Close wrapping section %>
+  <% end %>
 <% end %>

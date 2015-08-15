@@ -1,6 +1,34 @@
 sections:
 
-    -   partial: "hero"
-        title: "Permission to appeal"
-        content: "pages/section-intro"
-    -   partial: "intro"
+  ## HERO
+  - partial: "hero"
+    slug: "about"
+    title: "Permission to appeal"
+    content: "pages/section-intro"
+    no_wrapper: true
+
+  ## PHOTOS
+  - partial: "photos"
+    title: "Photo Gallery"
+    content: "pages/section-intro"
+    masthead: true
+    masthead_title: "Photos"
+
+  ## SOUNDS
+  - partial: "sounds"
+    title: "Sounds"
+    content: "pages/section-intro"
+    masthead: true
+
+  ## BAND
+  - partial: "band"
+    title: "The Band"
+    content: "pages/section-intro"
+    masthead: true
+    masthead_title: "Band"
+
+  ## CONTACT
+  - partial: "contact"
+    title: "Contact"
+    content: "pages/section-intro"
+    masthead: true

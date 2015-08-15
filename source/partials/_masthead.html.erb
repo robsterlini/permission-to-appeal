@@ -1,19 +1,19 @@
-<header class="masthead">
+ <header class="masthead">
   <div class="group"> 
     <%= link_to default_site_title, "index.html", :title => "Back to the homepage", :class => "masthead__logo link--reversed" %>
     <nav class="nav">
       <ul class="nav__list"><!--
-        <% data.pages.pages.each do |nav| %>
-          <% if nav.nav.masthead != false %>
+        <% data.home.sections.each do |nav| %>
+          <% if nav.masthead %>
             --><li class="nav__item">
-              <a title="<%= nav.nav.alt %>" class="nav__link--<%= nav.slug != "" ? nav.slug : "home" %> link--reversed" href="/<%= nav.slug %>"><%= nav.nav.label %></a>
+              <%= link_to "#{nav.masthead_title || nav.title}", "##{nav.slug || nav.partial}", :class => "nav__link--#{nav.slug || nav.partial} link--reversed" %>
             </li><!--
           <% end %>
         <% end %>
       --></ul>
     </nav>
-    <div class="nav__toggle btns--sizing">
-      <a href="#menu" class="btn nav__toggle__btn" data-js="toggle-navigation"><span class="btn__label">Menu</span></a>
+    <div class="btns--sizing">
+      <%= link_to "Book us", "#contact", :class => "btn" %>
     </div>
   </div>
 </header>

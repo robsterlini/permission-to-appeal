@@ -9,7 +9,7 @@
 ========================================== */
 
 .masthead {
-	background: $color-masthead;
+	background: rgba($color-masthead, 0.85);
 	left: 0;
 	padding: $measure-unit 0;
 	position: fixed;
