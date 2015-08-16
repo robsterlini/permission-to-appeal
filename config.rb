@@ -78,11 +78,11 @@ set :default_posts, '5'
 set :twitter_username, 'robsterlini'
 
 # Create pages
-data.pages.pages.each do |p|
-  if p[:template]
-    proxy "#{p[:slug]}", "/templates/#{p[:template]}.html", :locals => {:page => p}
-  end
-end
+# data.pages.pages.each do |p|
+#   if p[:template]
+#     proxy "#{p[:slug]}", "/templates/#{p[:template]}.html", :locals => {:page => p}
+#   end
+# end
 
 # Use relative URLs
 activate :relative_assets
