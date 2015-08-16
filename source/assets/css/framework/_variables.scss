@@ -21,6 +21,7 @@ $bp-large:       $measure * 72;
 // Tweakpoints
 $tp-masthead-hamburger:   $measure * 30; // 480
 $tp-two-columns: 					$measure * 60; // 960
+$tp-fixed-images:         $bp-tiny;
  
 // Max widths
 $layout-max-width:              $measure * 40;
@@ -40,3 +41,4 @@ $masthead-fixed: $measure-unit * 8;
 $z-masthead: 2;
 $z-wrapper: 1;
 $z-lightbox: 99;
+$z-footer: 5;
