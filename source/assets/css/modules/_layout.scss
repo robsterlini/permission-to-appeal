@@ -4,6 +4,10 @@
  * @requires framework/_type.scss
  */
 
+body {
+  position: relative;
+}
+
 .group {
 	margin:0 auto;
 	max-width:$layout-max-width-wide-unit;
