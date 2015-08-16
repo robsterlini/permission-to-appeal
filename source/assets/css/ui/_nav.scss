@@ -54,8 +54,16 @@
 ========================================== */
 
 .nav__btns {
-  margin: 0;
+  margin: auto 0 auto $measure-unit;
 }
 .btn--booking {
+  background: $color-white;
+  border-color: $color-white;
+  color: $color-black;
   margin: 0;
+  @include hover {
+    // background: transparent;
+    border-color: $color-white;
+    color: $color-white;
+  }
 }
