@@ -57,3 +57,8 @@ hr {
     width: calc(100% - #{$col-slim-unit} - #{$measure-unit});
   }
 }
+
+.section__anchor {
+  position: absolute;
+  top: rem(77);
+}
