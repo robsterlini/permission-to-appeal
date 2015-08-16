@@ -3,7 +3,7 @@ sections:
   ## HERO
   - partial: "hero"
     slug: "about"
-    title: "Permission to appeal"
+    title: "Permission to Appeal"
     content: "pages/section-intro"
     masthead: true
     masthead_title: "Permission to Appeal"
