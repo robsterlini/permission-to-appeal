@@ -20,9 +20,10 @@
 $color-white: #f9f9f9;
 $color-black: #191615;
 
-$color-dark:  #222;
+$color-dark:  #60574c;
 
-$color-accent: #cca61d;
+// $color-accent: #cca61d;
+$color-accent: $color-dark;
 
 $color-alert-1: #d31b1b;
 $color-alert-2: #d3541b;
@@ -43,12 +44,20 @@ $color-masthead: $color-black;
 ====================================== */
 
 $color-link-primary: $color-accent;
-$color-link-primary-hover: darken($color-accent,5%);
+$color-link-primary-hover: darken($color-accent, 10%);
 $color-link-primary-active: $color-black;
 
-$color-link-reversed: $color-accent;
-$color-link-reversed-hover: lighten($color-accent,5%);
+$color-link-reversed: $color-white;
+$color-link-reversed-hover: lighten($color-accent, 10%);
 $color-link-reversed-active: $color-white;
+
+/* ==|== Colors =================
+   Buttons
+====================================== */
+
+$color-button-background-primary: $color-dark;
+$color-button-primary: $color-white;
+
 
 /* ==|== Colors =================
 	Social
