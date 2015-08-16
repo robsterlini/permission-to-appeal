@@ -13,6 +13,7 @@
 	color: $color-white;
 	overflow: hidden;
 	padding: $measure-unit * 8 0 $measure-unit * 2;
+	text-shadow: rgba($color-black, 0.5) rem(0) rem(1) rem(2);
 	.flexbox & {
 		display: flex;
 		min-height: $measure-unit * 60;

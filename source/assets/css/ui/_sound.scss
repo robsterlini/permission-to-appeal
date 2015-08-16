@@ -12,6 +12,7 @@
 	background-size: cover;
 	overflow: hidden;
 	padding-bottom: $measure-unit * 2;
+	text-shadow: rgba($color-white, 0.7) rem(0) rem(1) rem(2);
 	@include min-width($bp-mid) {
 		padding: $measure-unit 0 $measure-unit * 3;
 	}
