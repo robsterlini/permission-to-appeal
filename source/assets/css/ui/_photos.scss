@@ -14,12 +14,12 @@ $photos-per-row-mid: 6;
 $photos-per-row-small: 4;
 $photos-per-row-tiny: 3;
 
-.photos {
-
+.section--photos {
+	padding: 0;
 }
 
 .photo {
-	background: center no-repeat;
+	background: $color-dark center no-repeat;
 	background-size: cover;
 	display: inline-block;
 	height: 100vw / $photos-per-row-tiny;

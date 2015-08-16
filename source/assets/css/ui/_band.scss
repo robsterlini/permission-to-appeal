@@ -8,12 +8,10 @@
 ========================================== */
 
 .section--band {
-	background: $color-black url(../images/hero/sounds_gfergerg.jpg) center no-repeat;
-	background-size: cover;
   color: $color-white;
 	overflow: hidden;
+  padding: 0;
   text-shadow: rgba($color-black, 0.5) rem(0) rem(1) rem(2);
-	// padding-bottom: $measure-unit * 2;
 }
 
 /* ==|== Band =================
@@ -24,14 +22,19 @@ $face-small: $measure-unit * 12;
 $face-mid: $measure-unit * 16;
 
 .band__member {
-  background: center no-repeat fixed;
-  background-size: cover;
+  background: $color-black center top no-repeat;
+  background-size: 100% auto;
   padding: $measure-unit 0 $measure-unit * 2;
   overflow: hidden;
   .group {
     position: relative;
   }
+  @include min-width($tp-fixed-images) {
+    background-attachment: fixed;
+    background-size: cover;
+  }
   @include min-width($bp-small) {
+    padding: $measure-unit * 2 0 $measure-unit * 3;
     &:nth-of-type(even) {
       .group {
         padding-left: $face-small + $measure-unit * 2;

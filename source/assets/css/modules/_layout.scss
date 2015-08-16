@@ -15,7 +15,8 @@
   background:$color-white;
   flex:1;
   overflow: hidden;
-  padding: 0 0 $measure-unit * 3;
+  // padding: 0 0 $measure-unit * 3;
+  padding: 0;
   position: relative;
   width: 100%;
   z-index: $z-wrapper;
@@ -58,6 +59,26 @@ hr {
   }
 }
 
+/* ==|== Layout =================
+  Sections
+========================================== */
+
+[class^="section--"] {
+  background: $color-background center top no-repeat;
+  background-size: 100% auto;
+  padding-bottom: $measure-unit * 2;
+  position: relative;
+  @include min-width($bp-mid) {
+    padding: $measure-unit 0 $measure-unit * 3;
+  }
+  @include min-width($tp-fixed-images) {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  @include min-width($bp-large) {
+    padding: $measure-unit * 2 0 $measure-unit * 4;
+  }
+}
 .section__anchor {
   position: absolute;
   top: rem(77);
