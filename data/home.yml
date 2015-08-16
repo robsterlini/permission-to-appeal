@@ -50,5 +50,7 @@ sections:
     content: "pages/section-intro"
     masthead: true
     data:
+      copy:
+        - "If you want to find out more about us, or want to book us for a gig, get in touch via email!"
       email: "michael.roberts@ucl.ac.uk"
       ## CHANGE TO CAPITAL A
