@@ -40,12 +40,11 @@
 	color: $l;
 	text-decoration: none;
 	text-shadow: $text-shadow;
-	&:hover,
-	&:focus {
+	@include hover {
 		background-image: linear-gradient($h 50%, rgba($h, 0) 50%);
 		color: $h;
 	}
-	&:active {
+	@include active {
 		background-image: linear-gradient($a 50%, rgba($a, 0) 50%);
 		color: $a;
 	}
@@ -53,11 +52,18 @@
 
 a {
 	@include gradient-underline();
-	transition: color $timing cubic-bezier(#{$bezier-nice});
+	// transition: color $timing cubic-bezier(#{$bezier-nice});
 }
 
 %link-reversed {
-	@include gradient-underline($color-link-reversed, 98%, $color-masthead, $color-link-reversed, $color-link-reversed-hover, $color-link-reversed-active);
+	@include gradient-underline($color-accent, 98%, $color-masthead, $color-link-reversed, $color-link-reversed, $color-link-reversed-active);
+	@include hover {
+		color: $color-link-reversed;
+	}
+	@include active {
+		background-image: linear-gradient(lighten($color-accent, 10%) 50%, rgba(lighten($color-accent, 10%), 0) 50%);
+		color: lighten($color-accent, 10%);
+	}
 }
 
 .link--reversed {
