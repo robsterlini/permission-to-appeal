@@ -8,8 +8,8 @@ $measure-unit:  rem($measure);
 $timing:  .25s;
 
 // Visual variables
-$btn-radius: rem(3);
-$btn-border: rem(2);
+$btn-radius: 0;
+$btn-border: rem(1);
 
 // Breakpoints
 $bp-miniscule:   $measure * 16;

@@ -49,7 +49,7 @@
 ========================================== */
 
 %btn {
-	border: $btn-border solid $color-link-primary;
+	border: $btn-border solid $color-button-background-primary;
 	border-radius: $btn-radius;
 	display: inline-block;
 	font-weight: $font-weight-bold;
@@ -57,7 +57,7 @@
 	margin: $measure-unit / 2 $measure-unit $measure-unit / 2;
 	padding: $measure-unit / 2 $measure-unit rem($measure / 2 + 1);
 	text-decoration: none;
-	transition: all $timing cubic-bezier(#{$bezier-nice});
+	// transition: all $timing cubic-bezier(#{$bezier-nice});
 	width: auto;
 	@include active {
 		transform: scale(0.95, 0.95);
@@ -70,13 +70,13 @@
 
 .btn {
 	@extend %btn;
-	background: $color-link-primary;
-	color: $color-white;
+	background: $color-button-background-primary;
+	color: $color-button-primary;
 	text-shadow: none;
 	@include hover {
-		background: $color-link-primary-hover;
-		border-color: $color-link-primary-hover;
-		color: $color-white;
+		background: transparent;
+		border-color: $color-button-background-primary;
+		color: $color-button-background-primary;
 	}
 	.btns--read-more & {
 		max-width: $measure-unit * 14;
