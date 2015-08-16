@@ -89,6 +89,7 @@ $face-mid: $measure-unit * 16;
 }
 
 .band__member__face {
+  border: rem(2) solid $color-accent;
   max-width: $face-small;
   width: 100%;
   @include min-width($bp-small) {
