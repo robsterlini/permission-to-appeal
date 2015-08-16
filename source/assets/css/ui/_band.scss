@@ -20,9 +20,10 @@
 ========================================== */
 
 $face-small: $measure-unit * 12;
+$face-mid: $measure-unit * 16;
 
 .band__member {
-  background: center no-repeat;
+  background: center no-repeat fixed;
   background-size: cover;
   padding: $measure-unit 0 $measure-unit * 2;
   overflow: hidden;
@@ -47,14 +48,42 @@ $face-small: $measure-unit * 12;
       }
     }
   }
+  @include min-width($bp-mid - 100) {
+    &:nth-of-type(even) {
+      .group {
+        padding-left: $face-mid + $measure-unit * 2;
+      }
+    }
+    &:nth-of-type(odd) {
+      .group {
+        padding-right: $face-mid + $measure-unit * 2;
+      }
+    }
+  }
+  @include min-width($bp-mid) {
+    padding: $measure-unit * 3 0 $measure-unit * 4;
+  }
+  @include min-width($bp-mid + 100) {
+    display: flex;
+    min-height: 90vh;
+    padding: $measure-unit * 4 0 $measure-unit * 5;
+    .group {
+      margin: auto;
+    }
+  }
 }
 
 .band__member__face {
   max-width: $face-small;
   width: 100%;
   @include min-width($bp-small) {
+    max-width: none;
     position: absolute;
     top: calc(50% - #{$face-small / 2});
     width: $face-small;
+  }
+  @include min-width($bp-mid - 100) {
+    top: calc(50% - #{$face-mid / 2});
+    width: $face-mid;
   }
 }

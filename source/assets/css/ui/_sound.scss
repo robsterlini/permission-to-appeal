@@ -8,10 +8,16 @@
 ========================================== */
 
 .section--sounds {
-	background: $color-white url(../images/hero/sounds.jpg) center no-repeat;
+	background: $color-white url(../images/hero/sounds.jpg) center no-repeat fixed;
 	background-size: cover;
 	overflow: hidden;
 	padding-bottom: $measure-unit * 2;
+	@include min-width($bp-mid) {
+		padding: $measure-unit 0 $measure-unit * 3;
+	}
+	@include min-width($bp-large) {
+		padding: $measure-unit * 2 0 $measure-unit * 4;
+	}
 }
 
 /* ==|== Sounds =================

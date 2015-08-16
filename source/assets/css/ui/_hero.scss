@@ -8,19 +8,33 @@
 ========================================== */
 
 .hero {
-	background-color: $color-black;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba($color-black,0), $color-black), url(../images/hero/hero.jpg);
-	background-size: cover, cover;
+	background: $color-black url(../images/hero/hero.jpg) center top no-repeat fixed;
+	background-size: cover;
 	color: $color-white;
 	overflow: hidden;
-	padding: $measure-unit * 16 0 $measure-unit * 2;
+	padding: $measure-unit * 8 0 $measure-unit * 2;
 	.flexbox & {
 		display: flex;
 		min-height: $measure-unit * 60;
 		.group {
 			margin-top: auto;
 		}
+	}
+	.group {
+		padding-top: $measure-unit * 4;
+		position: relative;
+		&:before {
+			background: linear-gradient(rgba($color-black, 0.001), rgba($color-black, 0.8) 33%, $color-black);
+			bottom: $measure-unit * -2;
+			content: '';
+			left: 50%;
+			margin-left: -50vw;
+			position: absolute;
+			top: $measure-unit * -4;
+			width: 100vw;
+		}
+	}
+	[class^="col--"] {
+		position: relative;
 	}
 }
