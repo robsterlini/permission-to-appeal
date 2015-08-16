@@ -25,7 +25,18 @@ $face-mid: $measure-unit * 16;
   background: $color-black center top no-repeat;
   background-size: 100% auto;
   padding: $measure-unit 0 $measure-unit * 2;
+  position: relative;
   overflow: hidden;
+  &:before {
+    background: linear-gradient(rgba($color-black, 0.001), rgba($color-black, 0.8) 33%, $color-black);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
   .group {
     position: relative;
   }
