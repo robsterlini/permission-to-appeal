@@ -46,6 +46,29 @@ $photos-per-row-tiny: 3;
 }
 
 /* ==|== Photos =================
+	Credit
+========================================== */
+
+.photos__credit {
+	position: absolute;
+	font-style: italic;
+	opacity: 0.75;
+	text-align: right;
+	text-shadow: rgba($color-white, 0.7) rem(0) rem(1) rem(2);
+	top: 100%;
+	width: 100%;
+	z-index: $z-photo-credit;
+	p {
+		@extend %small-paragraph;
+		margin-top: $measure-unit / 2;
+		margin-bottom: 0;
+	}
+	a {
+		text-shadow: inherit;
+	}
+}
+
+/* ==|== Photos =================
 	Lightbox
 ========================================== */
 
