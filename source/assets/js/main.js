@@ -6,6 +6,7 @@
 //#= require _navToggle
 //#= require _share */
 //= require _lightbox
+//= require _sounds
 
 $(function() {
 	// This is all we need in our main.js file - isn't it neat :)
