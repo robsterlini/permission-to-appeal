@@ -95,6 +95,15 @@ h6 {
 		@include font-size(16);
 	}
 }
+%small-paragraph {
+	@include font-size(14);
+  @include min-width($bp-tiny) {
+    @include font-size(15);
+  }
+  @include min-width($bp-small) {
+    @include font-size(16);
+  }
+}
 p {
 	@extend %paragraph;
 }

@@ -10,7 +10,14 @@
 .section--sounds {
 	background-image: url(../images/hero/sounds.jpg);
 	overflow: hidden;
+	padding-top: $measure-unit;
 	text-shadow: rgba($color-white, 0.7) rem(0) rem(1) rem(2);
+	@include min-width($bp-mid) {
+    padding-top: $measure-unit * 2;
+  }
+	@include min-width($bp-large) {
+    padding-top: $measure-unit * 3;
+  }
 }
 
 /* ==|== Sounds =================
