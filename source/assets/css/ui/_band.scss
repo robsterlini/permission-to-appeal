@@ -86,6 +86,13 @@ $face-mid: $measure-unit * 16;
       margin: auto;
     }
   }
+  &--alumni {
+    &:nth-of-type(n) {
+      .group {
+        padding: 0;
+      }
+    }
+  }
 }
 
 .band__member__face {
@@ -101,5 +108,27 @@ $face-mid: $measure-unit * 16;
   @include min-width($bp-mid - 100) {
     top: calc(50% - #{$face-mid / 2});
     width: $face-mid;
+  }
+}
+
+.band__alumni {
+  list-style: none;
+  max-width: none;
+  text-align: center;
+}
+.band__alumnus {
+  display: inline-block;
+  max-width: $face-small;
+  margin: $measure-unit / 2;
+  vertical-align: middle;
+  width: 100%;
+  &__name {
+
+  }
+  .band__member__face {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
   }
 }

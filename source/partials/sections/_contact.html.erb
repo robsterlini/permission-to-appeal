@@ -1,0 +1,7 @@
+<div class="group">
+  <h2><%= s.title %></h2>
+  <% s.data.copy.each do |text| %>
+    <p><%= text %></p>
+  <% end %>
+    <p class="btns btns--left"><%= link_to s.data.email, "mailto:#{s.data.email}", :title => "Get in touch with the band via email", :class => "btn" %><%= partial "partials/fb", :locals => { :hidden => false } %></p>
+</div>

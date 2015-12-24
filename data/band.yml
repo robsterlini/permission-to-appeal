@@ -27,8 +27,10 @@ band:
       - "Dyed-in-the-wool Londoner (of Italian extraction) Luigi has been playing alto sax since 2007. He plays in other bands, including his very regular, long-term group <em>Eat The Lemon</em>, and 10-piece occasional pop outfit <em>The Power of Ten</em>, in which he occupies the guitar-playing slot."
       - "Asked why Luigi has chosen also to play jazz saxophone – currently a Selmer Mark III – he replies: “It’s the very sound of the human voice and the very sound of a person’s soul”. Nice!"
 
+alumni:
+
   ## LEILA
   - name: "Leila Grove"
-    copy:
-      - "A member of a large musical family, Leila began playing flute and piano from a young age, before learning to sing as both a soloist and as part of a choir. Since leaving university, where she performed in a <em>baroque pop</em> band, she has enjoyed singing in the Gray’s Inn chapel choir and her family band <em>The Mutineers</em>."
-      - "Although Leila was relatively new to the vocal jazz style, she quickly fell in love. “At first it felt like breaking the rules, but then I realised that’s half the fun!”"
+    # copy:
+    #   - "A member of a large musical family, Leila began playing flute and piano from a young age, before learning to sing as both a soloist and as part of a choir. Since leaving university, where she performed in a <em>baroque pop</em> band, she has enjoyed singing in the Gray’s Inn chapel choir and her family band <em>The Mutineers</em>."
+    #   - "Although Leila was relatively new to the vocal jazz style, she quickly fell in love. “At first it felt like breaking the rules, but then I realised that’s half the fun!”"

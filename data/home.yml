@@ -23,7 +23,7 @@ sections:
     masthead: true
     data:
       copy:
-        - "Listen to the luxurious sounds of Permission to Appeal captured live!"
+        - "Listen to the luxurious sounds of <em>Permission to Appeal</em> captured live!"
       sounds:
         - "Blue Monk"
         - "Cute"
@@ -40,6 +40,11 @@ sections:
     title: "The Band"
     masthead: true
     masthead_title: "Band"
+    data:
+      alumni:
+        title: 'Esteemed Alumni'
+        copy:
+          - "<em>Permission to Appeal</em> has a rich family tree, and our mic stands, guitars and more have been graced by these fine musicians."
 
   ## CONTACT
   - partial: "contact"
@@ -49,4 +54,5 @@ sections:
       copy:
         - "If you want to find out more about us, or want to book us for a gig, get in touch via email!"
       email: "michael.roberts@ucl.ac.uk"
+      facebook: "https://fb.com/permissiontoappeal"
       ## CHANGE TO CAPITAL A

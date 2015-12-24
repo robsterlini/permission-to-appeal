@@ -72,11 +72,13 @@
 	@extend %btn;
 	background: $color-button-background-primary;
 	color: $color-button-primary;
+	fill: $color-button-primary;
 	text-shadow: none;
 	@include hover {
 		background: transparent;
 		border-color: $color-button-background-primary;
 		color: $color-button-background-primary;
+		fill: $color-button-background-primary;
 	}
 	.btns--read-more & {
 		max-width: $measure-unit * 14;
@@ -105,12 +107,43 @@
 	Social buttons
 ========================================== */
 
-[href*="dribbble.com"] {
-	@include social-color($color-s-dribbble, true, true, 15%);
+// [href*="dribbble.com"] {
+// 	@include social-color($color-s-dribbble, true, true, 15%);
+// }
+// [href*="twitter.com"] {
+// 	@include social-color($color-s-twitter, true, false);
+// }
+[href*="fb.com"] {
+	@include social-color($color-s-facebook);
 }
-[href*="twitter.com"] {
-	@include social-color($color-s-twitter, true, false);
+
+/* ==|== Buttons =================
+	Icon
+========================================== */
+
+.btn--icon {
+	padding: $measure-unit / 2 $measure-unit / 2 rem($measure / 2 + 1) rem($measure * 2);
+	position: relative;
+	&:before {
+		content: '';
+		display: inline-block;
+		height: rem(22);
+		position: relative;
+		vertical-align: middle;
+		width: rem(3);
+	}
 }
-[href*="instagram.com"] {
-	@include social-color($color-s-instagram, false);
+.btn__icon {
+	display: inline-block;
+	fill: inherit;
+	left: rem(10);
+	height: rem(22);
+	position: absolute;
+	top: 50%;
+	margin: rem(22 / -2) 0 0;
+	// vertical-align: middle;
+	// width: $measure;
+	& + span {
+		margin-left: $measure-unit / 2;
+	}
 }

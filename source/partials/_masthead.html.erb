@@ -3,17 +3,22 @@
     <%= link_to default_site_title, "index.html", :title => "Back to the homepage", :class => "visuallyhidden" %>
     <nav class="nav">
       <ul class="nav__list"><!--
-        <% data.home.sections.each do |nav| %>
+        <% data.home.sections.each_with_index do |nav, index| %>
           <% if nav.masthead %>
             --><li class="nav__item">
-              <%= link_to "#{nav.masthead_title || nav.title}", "##{nav.slug || nav.partial}", :class => "nav__link--#{nav.slug || nav.partial} link--reversed" %>
+              <% link_text = nav.masthead_title || nav.title
+                if index == 0
+                  link_text = "<strong>#{link_text}</strong>"
+                end
+              %>
+              <%= link_to link_text, "##{nav.slug || nav.partial}", :class => "nav__link--#{nav.slug || nav.partial} link--reversed" %>
             </li><!--
           <% end %>
         <% end %>
       --></ul>
     </nav>
     <div class="btns--sizing nav__btns">
-      <%= link_to "Book us", "#contact", :class => "btn btn--booking" %>
+      <%= link_to "Book us", "#contact", :class => "btn btn--booking" %><%= partial "partials/fb", :locals => { :hidden => true } %>
     </div>
   </div>
 </header>

@@ -12,7 +12,7 @@
 	background: rgba($color-masthead, 0.91);
 	left: 0;
 	padding: $measure-unit 0;
-	position: absolute;
+	position: relative;
 	top: 0;
 	width: 100%;
 	z-index: $z-masthead;
@@ -21,11 +21,13 @@
 	// }
 	// @include min-width($tp-masthead-hamburger) {
 		// .group {
+		@include min-width($tp-unstack-masthead) {
 			.flexbox & {
 				display: flex;
 				justify-content: space-between;
 			}
 		}
+	}
 	// }
 	@include min-width($bp-small) {
 		position: fixed;

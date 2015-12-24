@@ -9,33 +9,48 @@
 
 .hero {
 	background: $color-black url(../images/hero/hero.jpg) center top no-repeat;
-	background-size: cover;
+	background-size: contain;
 	color: $color-white;
 	overflow: hidden;
-	padding: $measure-unit * 8 0 $measure-unit * 2;
+	padding: 70% 0 $measure-unit * 2;
 	text-shadow: rgba($color-black, 0.5) rem(0) rem(1) rem(2);
+	// @include min-width($bp-small) {
+	// }
 	@include min-width($tp-fixed-images) {
+		background-size: cover;
 		background-attachment: fixed;
+	// }
+	// @include min-width($bp-small) {
+		padding-top: $measure-unit * 8;
+		.flexbox & {
+			display: flex;
+			min-height: $measure-unit * 60;
+			.group {
+				margin-top: auto;
+			}
+		}
 	}
-	.flexbox & {
-		display: flex;
-		min-height: $measure-unit * 60;
-		.group {
-			margin-top: auto;
+	// @include max-width($bp-small) {
+	@include max-width($tp-fixed-images) {
+		h1 {
+			margin-top: $measure-unit;
 		}
 	}
 	.group {
-		padding-top: $measure-unit * 4;
-		position: relative;
-		&:before {
-			background: linear-gradient(rgba($color-black, 0.001), rgba($color-black, 0.8) 33%, $color-black);
-			bottom: $measure-unit * -2;
-			content: '';
-			left: 50%;
-			margin-left: -50vw;
-			position: absolute;
-			top: $measure-unit * -4;
-			width: 100vw;
+		// @include min-width($bp-small) {
+		@include min-width($tp-fixed-images) {
+	 		padding-top: $measure-unit * 4;
+			position: relative;
+			&:before {
+				background: linear-gradient(rgba($color-black, 0.001), rgba($color-black, 0.8) 33%, $color-black);
+				bottom: $measure-unit * -2;
+				content: '';
+				left: 50%;
+				margin-left: -50vw;
+				position: absolute;
+				top: $measure-unit * -4;
+				width: 100vw;
+			}
 		}
 	}
 	[class^="col--"] {

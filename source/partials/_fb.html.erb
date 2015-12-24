@@ -1,0 +1,9 @@
+<%
+  link_text_class = ""
+  if hidden 
+    link_text_class = "visuallyhidden"
+  end
+  link_text = "<span class=\"#{link_text_class}\">Like us on Facebook</span>"
+  link_text = "<svg class=\"btn__icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 266.895 266.895\"><path d=\"M252.16 0H14.73C6.6 0 0 6.6 0 14.73v237.43c0 8.14 6.6 14.73 14.73 14.73h127.83V163.53h-34.8v-40.28h34.8v-29.7c0-34.48 21.05-53.25 51.8-53.25 14.73 0 27.4 1.1 31.08 1.6v36.02H204.1c-16.7 0-19.95 7.96-19.95 19.62v25.72h39.9l-5.2 40.28h-34.7V266.9h68c8.15 0 14.74-6.6 14.74-14.74V14.73C266.9 6.6 260.3 0 252.15 0z\"/></svg>#{link_text}"
+%>
+<%= link_to link_text, "https://fb.com/permissiontoappeal", :class => "btn btn--icon" %>

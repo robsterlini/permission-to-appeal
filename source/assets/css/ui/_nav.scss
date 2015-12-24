@@ -18,7 +18,11 @@
 .nav__list {
   max-width: none;
   margin: 0;
-  padding: 0 0 rem(6);
+  padding: 0 0 $measure-unit / 2;
+  @include min-width($tp-unstack-masthead) {
+    padding-bottom: rem(4);
+    margin-right: $measure-unit; 
+  }
 }
 .nav__item {
   // @include min-width($tp-masthead-hamburger) {
@@ -64,16 +68,31 @@
 ========================================== */
 
 .nav__btns {
-  margin: auto 0 auto $measure-unit;
+  margin: auto 0;
+  .btn {
+    line-height: rem(22);
+    margin: 0;
+    vertical-align: middle;
+    // &[href*="fb.com"] {
+      @include hover {
+        border-color: $color-white;
+        color: $color-white;
+        fill: $color-white;
+      }
+    // }
+    & + .btn {
+      margin-left: $measure-unit / 2;
+    }
+  }
 }
 .btn--booking {
   background: $color-white;
   border-color: $color-white;
   color: $color-black;
-  margin: 0;
-  @include hover {
+  // margin: 0;
+  // @include hover {
     // background: transparent;
-    border-color: $color-white;
-    color: $color-white;
-  }
+    // border-color: $color-white;
+    // color: $color-white;
+  // }
 }

@@ -31,4 +31,8 @@
   p {
     @extend %small-paragraph;
   }
+  &__heart {
+    position: relative;
+    font-size: 0.75em;
+  }
 }
