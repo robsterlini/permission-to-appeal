@@ -44,7 +44,7 @@ sections:
       alumni:
         title: 'Esteemed Alumni'
         copy:
-          - "<em>Permission to Appeal</em> has a rich family tree, and our mic stands, guitars and more have been graced by these fine musicians."
+          - "<em>Permission to Appeal</em> has a rich family tree; our mic stands, guitars, and more have been graced by these fine musicians."
 
   ## CONTACT
   - partial: "contact"
