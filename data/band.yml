@@ -27,6 +27,14 @@ band:
       - "Dyed-in-the-wool Londoner (of Italian extraction) Luigi has been playing alto sax since 2007. He plays in other bands, including his very regular, long-term group <em>Eat The Lemon</em>, and 10-piece occasional pop outfit <em>The Power of Ten</em>, in which he occupies the guitar-playing slot."
       - "Asked why Luigi has chosen also to play jazz saxophone – currently a Selmer Mark III – he replies: “It’s the very sound of the human voice and the very sound of a person’s soul”. Nice!"
 
+  ## MARK
+  - name: "Mark Tomlinson"
+    copy:
+      - "Mark’s been playing drums for the best part of fifteen years. Longer if you count rudimentary drumkits assembled from his mother’s pots and pans."
+      - "Hailing from Watford, a town so unexotic the local steakhouse was shutdown when it turned out their antelope steak was actually horse, Mark was not even aware such a thing as Jazz existed until he moved to London. There he became rapidly engrossed in the musical offerings available to him, particularly the UCLU Big Band."
+      - "Since leaving University he has acted as a gun for hire in a myriad of different bands (and genres) including function bands The 145s, <em>The Fitzroy Six</em> and the UK’s only <em>Manowar</em> tribute band: <em>Hanowar</em>. He currently plays drums for experimental-pop producer <a class=\"link--reversed\" href=\"https://holy57.bandcamp.com/\">Holy ’57</a> and works in a museum when he's not engaging in his own multiple creative endeavours. He hopes to stay there long enough that one day he’ll become an artefact himself and people will finally find him interesting."
+      - "Highlights of his jazz career include sneaking the solo from the Metal band <em>Mastodon</em>’s ‘Iron Tusk’ into a version of ‘Sing Sing Sing’ and (along with Mike) managing to somehow remain upright during a jam on a boat at three in the morning whilst on tour in Prague."
+
 alumni:
 
   ## LEILA
@@ -34,7 +42,7 @@ alumni:
   - name: "Carmen Alger"
   - name: "Cat Harris"
   - name: "Giacomo Zucconi"
-  - name: "Mark Tomlinson"
+  # - name: "Mark Tomlinson"
   - name: "Ryan O’Riordan"
   - name: "Stefan Siwiak-Jaszek"
     # copy:
