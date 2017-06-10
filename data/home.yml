@@ -25,15 +25,15 @@ sections:
       copy:
         - "Listen to the luxurious sounds of <em>Permission to Appeal</em> captured live!"
       sounds:
-        - "Blue Monk"
-        - "Cute"
-        - "Don’t Get Round Much Anymore"
-        - "Fly Me To The Moon"
-        - "The Girl From Ipanema"
+        - "St Thomas"
+        - "Pink Panther"
+        - "Ntyilo Ntyilo"
         - "God Rest Ye Merry Gentlemen"
-        - "I Wish I Knew How It Would Feel To Be Free"
-        - "Take The A Train"
-        - "There Will Never Be Another You"
+        - "The Girl From Ipanema"
+        - "Fly Me To The Moon"
+        - "Don’t Get Round Much Anymore"
+        - "Cantaloupe Island"
+        - "Bare Necessities"
 
   ## BAND
   - partial: "band"
