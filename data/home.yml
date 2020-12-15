@@ -19,11 +19,14 @@ sections:
 
   ## SOUNDS
   - partial: "sounds"
-    title: "Sounds"
+    title: "Music"
     masthead: true
     data:
       copy:
-        - "Listen to the luxurious sounds of <em>Permission to Appeal</em> captured live!"
+        - "Enjoy the luxurious sounds of <em>Permission to Appeal</em> captured live!"
+      videos:
+        - video_id: "mpnq0HZtu1A"
+        - video_id: "gMH7uAT9zoU"
       sounds:
         - "St Thomas"
         - "Pink Panther"
