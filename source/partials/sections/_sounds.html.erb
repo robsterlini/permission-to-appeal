@@ -3,13 +3,22 @@
   <% s.data.copy.each do |text| %>
     <p><%= text %>
   <% end %>
-  <!--<% s.data.sounds.each_with_index do |sound, index| %>
-    --><div class="sound">
-      <h4><%= sound %></h4>
-      <audio data-sound="<%= sound.to_slug %>" controls>
-        <source src="<%= "#{sounds_dir}/#{sound.to_slug}.mp3" %>" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div><!--
-  <% end %>-->
+  <div class="videos">
+    <!--<% s.data.videos.each_with_index do |video, index| %>
+      --><div class="videos__video">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<%= video.video_id %>?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div><!--
+    <% end %>-->
+  </div>
+  <div class="sounds">
+    <!--<% s.data.sounds.each_with_index do |sound, index| %>
+      --><div class="sounds__sound">
+        <h4><%= sound %></h4>
+        <audio data-sound="<%= sound.to_slug %>" controls>
+          <source src="<%= "#{sounds_dir}/#{sound.to_slug}.mp3" %>" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div><!--
+    <% end %>-->
+  </div>
 </div>
